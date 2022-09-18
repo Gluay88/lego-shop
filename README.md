@@ -20,3 +20,19 @@
 - import {Routes, Route} and {Container}
 
 -- create public folder
+
+- format the currentcy of money / price in utilitite => formatCurrency.ts
+
+- in context folder => ShoppingCartContext.tsx
+- useContext and createContext
+
+4 functions
+
+```
+type ShoppingCartContext = {
+  getItemQuantity: (id: number) => number;
+  increaseCartQuantity: (id: number) => void;
+  decreaseCartQuantity: (id: number) => void;
+  removeFromCart: (id: number) => void;
+};
+```

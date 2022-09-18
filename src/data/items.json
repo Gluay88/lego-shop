@@ -1,26 +1,26 @@
 [
   {
     "id": 1,
-    "name": "Book",
-    "price": 10.99,
+    "name": "Bugatti Chiron",
+    "price": 349.99,
     "imgUrl": "/imgs/Bugatti Chiron.jpeg"
   },
   {
     "id": 2,
-    "name": "Computer",
-    "price": 1199,
+    "name": "Porsche 911 RSR",
+    "price": 179.99,
     "imgUrl": "/imgs/Porsche 911 RSR.jpeg"
   },
   {
     "id": 3,
-    "name": "Banana",
-    "price": 1.05,
+    "name": "Volkswagen Beetle",
+    "price": 199,
     "imgUrl": "/imgs/Volkswagen Beetle.jpeg"
   },
   {
     "id": 4,
-    "name": "Car",
-    "price": 14000,
+    "name": "James Bond Aston Martin DB5",
+    "price": 229,
     "imgUrl": "/imgs/JamesBondAstonMartinDB5.jpeg"
   }
 ]
