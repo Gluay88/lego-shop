@@ -1,0 +1,11 @@
+.nav-bg {
+  background-color: rgb(255, 207, 0);
+  text-transform: uppercase;
+  font-weight: 500;
+  color: black;
+  line-height: 1.1875rem;
+}
+.lego-logo {
+  width: 12%;
+  height: auto;
+}
