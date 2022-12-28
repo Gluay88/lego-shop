@@ -17,7 +17,7 @@ export function Navbar() {
               Home
             </Nav.Link> */}
             <Nav.Link to="/shop" as={NavLink}>
-              Shop
+              Car Shop
             </Nav.Link>
             <Nav.Link to="/discover" as={NavLink}>
               Discover
