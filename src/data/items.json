@@ -3,25 +3,25 @@
     "id": 1,
     "name": "Bugatti Chiron",
     "price": 349.99,
-    "imgUrl": "/imgs/BugattiChiron1.jpeg"
+    "imgUrl": "/imgs/BugattiChiron1.png"
   },
   {
     "id": 2,
     "name": "Porsche 911 RSR",
     "price": 179.99,
-    "imgUrl": "/imgs/Porsche911RSR1.jpeg"
+    "imgUrl": "/imgs/Porsche911RSR1.png"
   },
   {
     "id": 3,
     "name": "Volkswagen Beetle",
     "price": 199.99,
-    "imgUrl": "/imgs/VolkswagenBeetle1.jpeg"
+    "imgUrl": "/imgs/VolkswagenBeetle1.png"
   },
   {
     "id": 4,
     "name": "James Bond™ Aston Martin DB5",
     "price": 299.99,
-    "imgUrl": "/imgs/JamesBondAstonMartinDB51.jpeg"
+    "imgUrl": "/imgs/JamesBondAstonMartinDB51.png"
   },
   {
     "id": 5,
@@ -33,6 +33,6 @@
     "id": 6,
     "name": "Ghostbusters™ ECTO-1",
     "price": 239.99,
-    "imgUrl": "/imgs/Ghostbusters1.jpeg"
+    "imgUrl": "/imgs/Ghostbusters1.png"
   }
 ]
