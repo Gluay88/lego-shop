@@ -9,7 +9,7 @@ type CartItemProps = {
 
 export function CartItem({ id, quantity }: CartItemProps) {
   const { removeFromCart } = useShoppingCart();
-  const item = storeItems.find((i) => i.id === id);
+  const item = storeItems.find((itemC) => itemC.id === id);
   if (item == null) return null;
   return (
     <Stack direction="horizontal" gap={2} className="d-flex align-items-center">
@@ -22,7 +22,7 @@ export function CartItem({ id, quantity }: CartItemProps) {
           {item.name}{" "}
           {quantity > 1 && (
             <span className="text-muted" style={{ fontSize: ".65rem" }}>
-              x{quantity}
+              {quantity} items
             </span>
           )}
         </div>

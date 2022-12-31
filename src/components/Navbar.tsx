@@ -1,5 +1,5 @@
 import { Button, Container, Nav, Navbar as NavbarBs } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import LegoLogo from "../../assets/LEGO_logo.svg";
 import "../App.css";
 import { useShoppingCart } from "../context/ShoppingCartContext";
@@ -10,14 +10,14 @@ export function Navbar() {
     <div>
       <NavbarBs sticky="top" className="shadow-sm mb-3" id="nav-bg">
         <Container>
-          <img src={LegoLogo} alt="Lego Logo" className="lego-logo" />
-
+          <Link to="/">
+            <img src={LegoLogo} alt="Lego Logo" className="lego-logo" />
+          </Link>
           <Nav className="me-auto">
-            {/* <Nav.Link to="/" as={NavLink} id="lego-logo">
-              Home
-            </Nav.Link> */}
+            {/* Nav.Link acts like react-router => give property to the link to...??*/}
+
             <Nav.Link to="/shop" as={NavLink}>
-              Car Shop
+              Cars
             </Nav.Link>
             <Nav.Link to="/discover" as={NavLink}>
               Discover

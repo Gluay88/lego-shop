@@ -5,11 +5,12 @@ import { useLocalStorage } from "../hooks/useLocalStorage";
 type ShoppingCartProviderProps = {
   children: ReactNode;
 };
-// ReactNode is tsx type that gives the props to children
+// ReactNode is tsx type that gives the props to children inside react
 
 type CartItem = {
   id: number;
   quantity: number;
+  // not needs name, it will be duplicated
 };
 
 type ShoppingCartContext = {
@@ -37,6 +38,7 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
     []
   );
 
+  // counts everything and returns it
   const cartQuantity = cartItems.reduce(
     (quantity, item) => item.quantity + quantity,
     0
@@ -45,10 +47,11 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
   const openCart = () => setIsOpen(true);
   const closeCart = () => setIsOpen(false);
 
+  // if we have that id return id (quantity) if not just return 0 (items are out)
   function getItemQuantity(id: number) {
     return cartItems.find((item) => item.id === id)?.quantity || 0;
   }
-  // this one is confusing a bit ..
+  // add items to the cart..
   function increaseCartQuantity(id: number) {
     return setCartItems((currItems) => {
       if (currItems.find((item) => item.id === id) == null) {

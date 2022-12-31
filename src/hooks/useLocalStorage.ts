@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 
+// T as a generic TYPE
 export function useLocalStorage<T>(key: string, initialValue: T | (() => T)) {
   const [value, setValue] = useState<T>(() => {
     const jsonValue = localStorage.getItem(key);
     if (jsonValue != null) return JSON.parse(jsonValue);
     if (typeof initialValue === "function") {
+      //solved the typescript issue..
       return (initialValue as () => T)();
     } else {
       return initialValue;

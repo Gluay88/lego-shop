@@ -1,4 +1,5 @@
 - npm create vite .
+  (no needs webpack => Vite is loading actual code into the browser as needed - hot reload)
 - package name lego-shopping
 - react framework
 - react ts
@@ -6,6 +7,8 @@
 - npm run dev
 
 ---
+
+Libraries ..
 
 - npm i react-router-dom bootstrap react-bootstrap
 - import bootstrap main.tsx
@@ -17,9 +20,10 @@
 - components and pages and data - json and stuff and context (react and redux)- hooks - utilities
 
 - router in main.tsx
+  `import { BrowserRouter } from "react-router-dom";`
 - import {Routes, Route} and {Container}
 
--- create public folder
+- create public folder - components, data, context, hooks, utilities, pages
 
 - format the currentcy of money / price in utilitite => formatCurrency.ts
 

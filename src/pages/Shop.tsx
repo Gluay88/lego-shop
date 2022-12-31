@@ -5,9 +5,8 @@ import storeItems from "../data/items.json";
 export function Shop() {
   return (
     <>
-      <h1>Shop</h1>
+      <h1>Our Collections:</h1>
       <Row md={2} xs={1} lg={3} className="g-3">
-        {/* g-3 => gap  */}
         {storeItems.map((item) => {
           return (
             // <Col key={item.id}>{JSON.stringify(item)}</Col>
