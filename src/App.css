@@ -28,27 +28,73 @@
   left: 0;
 }
 .account-btn {
-  width: 3.125rem;
-  height: 3.125rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   display: block;
   background-color: white;
-  margin-right: 0.5rem;
 }
 .account-btn a {
   text-decoration: none;
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: #0d6efd;
+}
+.account-btn img {
+  width: 82%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 0.45rem;
 }
 .account-btn .text {
   position: relative;
-  bottom: 2rem;
-  right: 6.5rem;
+  bottom: 1.75rem;
+  right: 5.5rem;
   visibility: hidden;
   text-align: center !important;
   width: 7rem;
+  text-transform: lowercase;
 }
 .account-btn:hover .text {
   visibility: visible;
   text-align: center !important;
+}
+.cart-btn {
+  border: none !important;
+  background: none !important;
+}
+.cart-icon {
+  width: 2.5rem;
+}
+.cart-icon .text-cart {
+  position: relative;
+  bottom: 1.5rem;
+  left: 3.25rem;
+  visibility: hidden;
+  text-align: center !important;
+  color: #0d6efd;
+}
+.cart-icon:hover .text-cart {
+  visibility: visible;
+  text-align: center !important;
+}
+.footer-container {
+  width: 100%;
+  height: 10rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.footer-container h4 {
+  font-size: 1rem;
+  color: #6c757d;
+}
+.footer-container span {
+  color: #212529;
+}
+.w-100:hover {
+  background: none !important;
+  border: rgb(253, 128, 36) solid 0.15rem !important;
+  color: rgb(253, 128, 36) !important;
 }
