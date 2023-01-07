@@ -13,7 +13,7 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
   return (
     <Offcanvas show={isOpen} onHide={closeCart} placement="end">
       <Offcanvas.Header closeButton>
-        <Offcanvas.Title>My Bag</Offcanvas.Title>
+        <Offcanvas.Title>My Bag 🛍️</Offcanvas.Title>
       </Offcanvas.Header>
       <Offcanvas.Body>
         <Stack gap={3}>
@@ -30,6 +30,9 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
                 return total + (item?.price || 0) * cartItem.quantity;
               }, 0)
             )}
+          </div>
+          <div>
+            <button>Process and Checkout</button>
           </div>
         </Stack>
       </Offcanvas.Body>

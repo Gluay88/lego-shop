@@ -1,6 +1,6 @@
 import { Button, Container, Nav, Navbar as NavbarBs } from "react-bootstrap";
 import { NavLink, Link } from "react-router-dom";
-import LegoLogo from "../../assets/LEGO_logo.svg";
+import LegoLogo from "../../assets/LEGO_logo_OG.svg";
 import AccountIcon from "../../assets/account-icon.svg";
 import "../App.css";
 import { useShoppingCart } from "../context/ShoppingCartContext";
@@ -18,16 +18,16 @@ export function Navbar() {
             {/* Nav.Link acts like react-router => give property to the link to...??*/}
 
             <Nav.Link to="/" as={NavLink}>
-              Cars
+              <span className="nav-icon">🚗</span> Cars
             </Nav.Link>
             <Nav.Link to="/discover" as={NavLink}>
-              Discover
+              <span className="nav-icon">🕵🏻‍♀️</span>Discover
             </Nav.Link>
             <Nav.Link to="/help" as={NavLink}>
-              Help
+              <span className="nav-icon">🙋🏼‍♀️</span>Help
             </Nav.Link>
             <Nav.Link to="/holiday" as={NavLink}>
-              Holiday
+              <span className="nav-icon">🎁</span>Holiday
             </Nav.Link>
           </Nav>
           <div className="account-btn">
