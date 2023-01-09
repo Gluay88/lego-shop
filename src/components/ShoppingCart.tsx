@@ -31,8 +31,8 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
               }, 0)
             )}
           </div>
-          <div>
-            <button>Process and Checkout</button>
+          <div className="checkout">
+            <a href="/checkout">Process and Checkout</a>
           </div>
         </Stack>
       </Offcanvas.Body>

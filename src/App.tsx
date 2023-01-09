@@ -6,6 +6,7 @@ import { Help } from "./pages/Help";
 import { Holiday } from "./pages/Holiday";
 import { Navbar } from "./components/Navbar";
 import { ShoppingCartProvider } from "./context/ShoppingCartContext";
+import { Checkout } from "./pages/Checkout";
 import { Footer } from "./components/Footer";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/discover" element={<Discover />} />
           <Route path="/help" element={<Help />} />
           <Route path="/holiday" element={<Holiday />} />
+          <Route path="/checkout" element={<Checkout />} />
         </Routes>
       </Container>
       <Footer />
