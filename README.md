@@ -40,3 +40,5 @@ type ShoppingCartContext = {
   removeFromCart: (id: number) => void;
 };
 ```
+
+== added credit card component
