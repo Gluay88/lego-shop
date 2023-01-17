@@ -10,6 +10,7 @@ type ShoppingCartProps = {
 
 export function ShoppingCart({ isOpen }: ShoppingCartProps) {
   const { closeCart, cartItems } = useShoppingCart();
+
   return (
     <Offcanvas show={isOpen} onHide={closeCart} placement="end">
       <Offcanvas.Header closeButton>
@@ -32,7 +33,7 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
             )}
           </div>
           <div className="checkout">
-            <a href="/checkout">Process and Checkout</a>
+            <a href="/checkout">Proceed and Checkout</a>
           </div>
         </Stack>
       </Offcanvas.Body>

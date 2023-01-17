@@ -1,8 +1,19 @@
+import CreditCard from "../components/CreditCard";
+import { useShoppingCart } from "../context/ShoppingCartContext";
+
 export function Checkout() {
+  const { cartQuantity } = useShoppingCart();
+
   return (
     <div className="sub-container">
       <div>
-        <h4>*** 🛒 Checkout - Coming soon!</h4>
+        {cartQuantity ? (
+          <h2>Checkout</h2>
+        ) : (
+          <h2>
+            Your bag is empty! 👉🏻 <a href="/">continue shopping </a>
+          </h2>
+        )}
       </div>
       <div className="checkout-container">
         <div className="form-container">
@@ -37,14 +48,12 @@ export function Checkout() {
               &nbsp; Use this as my billing address
             </p>
           </div>
-          <div>
-            <h2>
-              <span>2</span> Payment
-            </h2>
-          </div>
         </div>
-        <div className="order-summary-container">
-          <p>Order Summary</p>
+        <div className="credit-container">
+          <h2>
+            <span>2</span> Payment
+          </h2>
+          <CreditCard />
         </div>
       </div>
     </div>
