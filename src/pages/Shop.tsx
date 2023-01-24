@@ -14,12 +14,11 @@ export function Shop() {
         }}
         className="animation-text"
       >
-        Latest Collections 🚗 🚕 🚙
+        Our Latest Collections 🚗 🚕 🚙
       </h1>
       <Row md={2} xs={1} lg={3} className="g-3 animation">
         {storeItems.map((item) => {
           return (
-            // <Col key={item.id}>{JSON.stringify(item)}</Col>
             <Col key={item.id}>
               <StoreItem {...item} />
             </Col>

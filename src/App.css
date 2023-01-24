@@ -316,6 +316,7 @@
   margin-top: 3rem;
   padding-bottom: 2rem;
   border-bottom: solid rgba(0, 0, 0, 0.55) 0.1rem;
+  text-align: center;
 }
 /* credit Card */
 .credit-container {
@@ -404,15 +405,51 @@ Button.submit-btn {
   color: #6c757d;
   margin-top: 3rem;
 }
+.col {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+.col:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
 .animation {
   animation-duration: 2.5s;
   animation-name: cars;
 }
+.animation-text {
+  animation-duration: 2.5s;
+  animation-name: text;
+}
 @keyframes cars {
   from {
-    width: 500%;
+    width: 480%;
+    filter: blur(5px);
   }
   to {
     width: 100%;
+    filter: blur(0);
   }
+}
+@keyframes text {
+  from {
+    width: 580%;
+    filter: blur(5px);
+  }
+  to {
+    width: 100%;
+    filter: blur(0);
+  }
+}
+input.location-search-input {
+  width: 65%;
+  height: 3.25rem;
+  border-radius: 0.5rem;
+  border: none;
+  padding-left: 0.75rem;
+}
+.autocomplete-dropdown-container {
+  width: 65%;
+  margin: 0 auto;
+  font-size: 15px !important;
 }

@@ -1,5 +1,7 @@
+import React, { useState } from "react";
 import CreditCard from "../components/CreditCard";
 import { useShoppingCart } from "../context/ShoppingCartContext";
+import AddressAuto from "../components/AddressAuto";
 
 export function Checkout() {
   const { cartQuantity } = useShoppingCart();
@@ -21,6 +23,7 @@ export function Checkout() {
             <span>1</span> Shipping
           </h2>
           <h4>Enter shipping details</h4>
+
           <form>
             <label>First Name</label>
             <input placeholder="Emmet" />
@@ -39,10 +42,18 @@ export function Checkout() {
             <label>Zip code</label>
             <input placeholder="92107-8888" />
           </form>
-          <div className="seach-address">
-            <a href="#">Search for another address</a>
-            <br />
 
+          <div className="seach-address">
+            <p
+              style={{
+                fontSize: "1.25rem",
+                color: "#20467e",
+              }}
+            >
+              Search for another address
+            </p>
+            <AddressAuto />
+            <br />
             <p>
               <input type="checkbox" />
               &nbsp; Use this as my billing address
