@@ -62,7 +62,8 @@ const AddressAuto = () => {
         onSelect={handleSelect}
       >
         {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
-          <div key={suggestions.description}>
+          <div>
+            {/* key={suggestions.description} */}
             <input
               {...getInputProps({
                 placeholder: "🏡 Search Address ... ",
