@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Cards from "react-credit-cards";
+import SubmitPayment from "./SubmitPayment";
 import "react-credit-cards/es/styles-compiled.css";
 
 const CreditCard = () => {
@@ -138,14 +139,7 @@ const CreditCard = () => {
             </div>
           </div>
           <br />
-          <button
-            type="submit"
-            className="submit-btn "
-            value="Submit"
-            onClick={() => alert("Thank you 😻")}
-          >
-            Submit
-          </button>
+          <SubmitPayment />
         </form>
       </div>
     </>

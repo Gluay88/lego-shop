@@ -12,10 +12,11 @@ export function Shop() {
           fontSize: "1.75rem",
           marginTop: "3rem",
         }}
+        className="animation-text"
       >
         Latest Collections 🚗 🚕 🚙
       </h1>
-      <Row md={2} xs={1} lg={3} className="g-3">
+      <Row md={2} xs={1} lg={3} className="g-3 animation">
         {storeItems.map((item) => {
           return (
             // <Col key={item.id}>{JSON.stringify(item)}</Col>

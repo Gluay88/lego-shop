@@ -1,18 +1,21 @@
 import HolidayPicture from "../../assets/Start_Screen.webp";
+import NestedModal from "../components/NestedModal";
 export function Holiday() {
   return (
     <div className="sub-container">
-      <div>
-        <h4>*** 🎁 Holiday - Coming soon!</h4>
-      </div>
       <div className="holiday-container">
-        <h2>Find the perfect gift!</h2>
+        <h2>
+          Find the <span>perfect gift</span>!
+        </h2>
         <p>
-          Let our quick and easy Holiday Gift Finder take teh stress out of
+          Let our quick and easy Holiday Gift Finder take the stress out of
           searching..
         </p>
-        <button>Start</button>
+        <NestedModal />
         <img src={HolidayPicture} alt="holiday-lego" />
+      </div>
+      <div className="inProgress">
+        <p>** Working in progress..🎁</p>
       </div>
     </div>
   );

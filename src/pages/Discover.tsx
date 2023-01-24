@@ -3,9 +3,6 @@ import CountrieBG from "../../assets/countries.jpg";
 export function Discover() {
   return (
     <div className="sub-container">
-      <div>
-        <h4>*** 🕵🏻‍♀️ Discover - Coming soon! ***</h4>
-      </div>
       <div className="discover-container">
         <h2>25,000+ people in 40+ countries</h2>
         <img src={CountrieBG} alt="countrie-lego" />
@@ -26,6 +23,9 @@ export function Discover() {
             <span>Kjeld Kirk Kristiansen</span>, a grandchild of the founder.
           </p>
         </div>
+      </div>
+      <div className="inProgress">
+        <p>** Working in progress..🕵🏻‍♀️</p>
       </div>
     </div>
   );

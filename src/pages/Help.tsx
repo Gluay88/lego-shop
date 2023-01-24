@@ -45,9 +45,6 @@ export function Help() {
   ];
   return (
     <div className="sub-container">
-      <div>
-        <h4>*** 🙋🏼‍♀️ Help - Coming soon!</h4>
-      </div>
       <div className="discover-container">
         {/* <img src={CountrieBG} alt="countrie-lego" /> */}
       </div>
@@ -68,6 +65,9 @@ export function Help() {
           {buttons}
         </ButtonGroup>
       </Box>
+      <div className="inProgress">
+        <p>** Working in progress..🙋🏼‍♀️</p>
+      </div>
     </div>
   );
 }
