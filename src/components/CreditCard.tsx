@@ -28,7 +28,7 @@ const CreditCard = () => {
             name={name}
             expiry={expiry}
             cvc={cvc}
-            // focused={focus}
+            focused={focus}
           />
         </div>
 
