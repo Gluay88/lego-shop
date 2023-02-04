@@ -3,7 +3,7 @@ import { useShoppingCart } from "../context/ShoppingCartContext";
 import { formatCurrency } from "../utilities/formatCurrency";
 import { CartItem } from "./CartItem";
 import storeItems from "../data/items.json";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 type ShoppingCartProps = {
   isOpen: boolean;
@@ -11,6 +11,9 @@ type ShoppingCartProps = {
 
 export function ShoppingCart({ isOpen }: ShoppingCartProps) {
   const { closeCart, cartItems } = useShoppingCart();
+  const load = () => {
+    window.location.replace("/checkout");
+  };
 
   return (
     <Offcanvas show={isOpen} onHide={closeCart} placement="end">
@@ -33,10 +36,8 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
               }, 0)
             )}
           </div>
-          <div className="checkout">
-            <button>
-              <a href="/checkout">Proceed and Checkout</a>
-            </button>
+          <div className="checkout-btn">
+            <button onClick={load}>Proceed and Checkout</button>
           </div>
         </Stack>
       </Offcanvas.Body>
