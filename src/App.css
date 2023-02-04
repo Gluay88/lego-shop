@@ -255,21 +255,27 @@
 .order-status p {
   margin: 2.5rem 0;
 }
-.checkout-btn button {
-  width: 50%;
+.checkout {
+  width: 100%;
   height: auto;
-  display: block;
-  background-color: rgb(253, 128, 36) !important;
-  border-radius: 0.5rem;
-  text-align: center;
-  margin: 0 auto;
+  text-align: right;
+}
+.checkout a {
+  background-color: rgb(253, 128, 36);
   border: none;
-  padding: 0.5rem 0;
+  color: #212529;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  text-decoration: none;
 }
-.checkout-btn button:hover {
-  background-color: #ffc107 !important;
+.checkout a:hover {
+  background-color: #ffc107;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  color: #212529;
 }
-
 .checkout-container {
   margin: 3rem 0 !important;
   color: rgba(0, 0, 0, 0.55);
