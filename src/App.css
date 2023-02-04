@@ -260,7 +260,11 @@
   height: auto;
   text-align: right;
 }
-.checkout a {
+.checkout button {
+  background: none !important;
+  border: none !important;
+}
+.checkout button a {
   background-color: rgb(253, 128, 36);
   border: none;
   color: #212529;
@@ -269,7 +273,7 @@
   font-size: 1.25rem;
   text-decoration: none;
 }
-.checkout a:hover {
+.checkout button a:hover {
   background-color: #ffc107;
   -o-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
