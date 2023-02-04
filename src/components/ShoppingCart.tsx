@@ -34,9 +34,7 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
             )}
           </div>
           <div className="checkout">
-            <a href="https://gluay88.github.io/lego-shop/checkout">
-              Proceed and Checkout
-            </a>
+            <a href="/checkout">Proceed and Checkout</a>
           </div>
         </Stack>
       </Offcanvas.Body>
