@@ -1,12 +1,11 @@
 {
-  "homepage": "https://gluay88.github.io/lego-shop",
   "name": "lego-shop",
   "private": true,
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
