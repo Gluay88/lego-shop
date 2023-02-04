@@ -3,6 +3,6 @@ import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/lego-shop/",
+  base: "/gluay88.github.io/lego-shop/",
   plugins: [react()],
 });
