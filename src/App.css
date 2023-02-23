@@ -453,3 +453,7 @@ input.location-search-input {
   margin: 0 auto;
   font-size: 15px !important;
 }
+.inProgressHelp {
+  margin-top: 20rem;
+  text-align: center;
+}

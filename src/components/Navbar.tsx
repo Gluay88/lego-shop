@@ -29,6 +29,9 @@ export function Navbar() {
             <Nav.Link to="/holiday" as={NavLink}>
               <span className="nav-icon">🎁</span>Holiday
             </Nav.Link>
+            <Nav.Link to="/checkout" as={NavLink}>
+              <span className="nav-icon">💰</span>Checkout
+            </Nav.Link>
           </Nav>
           <div className="account-btn">
             <a href="#">

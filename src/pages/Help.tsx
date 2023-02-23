@@ -44,11 +44,7 @@ export function Help() {
     </Button>,
   ];
   return (
-    <div className="sub-container">
-      <div className="discover-container">
-        {/* <img src={CountrieBG} alt="countrie-lego" /> */}
-      </div>
-
+    <div className="help-container">
       <Box
         sx={{
           display: "flex",
@@ -65,7 +61,7 @@ export function Help() {
           {buttons}
         </ButtonGroup>
       </Box>
-      <div className="inProgress">
+      <div className="inProgressHelp">
         <p>** Working in progress..🙋🏼‍♀️</p>
       </div>
     </div>

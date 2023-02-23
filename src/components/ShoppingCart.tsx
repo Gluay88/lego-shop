@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { Offcanvas, Stack } from "react-bootstrap";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 import { formatCurrency } from "../utilities/formatCurrency";
@@ -34,7 +35,10 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
             )}
           </div>
           <div className="checkout">
-            <a href="/checkout">Proceed and Checkout</a>
+            {/* use closeCart props  */}
+            <Link to="/checkout" onClick={closeCart}>
+              Proceed and Checkout
+            </Link>
           </div>
         </Stack>
       </Offcanvas.Body>
