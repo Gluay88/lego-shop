@@ -25,7 +25,7 @@ export function Navbar() {
           <div className="link-submenu">
             <Link to="/">🚗 Cars</Link>
             <Link to="/discover">🕵🏻‍♀️ Discover</Link>
-            <Link to="/help">🙋🏼‍♀️ Help</Link>
+            {/* <Link to="/help">🙋🏼‍♀️ Help</Link> */}
             <Link to="/holiday">🎁 Holiday</Link>
             <Link to="/checkout">💰 Checkout</Link>
           </div>
@@ -45,9 +45,9 @@ export function Navbar() {
             <Nav.Link to="/discover" as={NavLink}>
               <span className="nav-icon">🕵🏻‍♀️</span>Discover
             </Nav.Link>
-            <Nav.Link to="/help" as={NavLink}>
+            {/* <Nav.Link to="/help" as={NavLink}>
               <span className="nav-icon">🙋🏼‍♀️</span>Help
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link to="/holiday" as={NavLink}>
               <span className="nav-icon">🎁</span>Holiday
             </Nav.Link>
