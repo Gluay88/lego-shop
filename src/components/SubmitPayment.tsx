@@ -50,10 +50,18 @@ function SubmitPayment() {
           }}
         >
           <h2 id="parent-modal-title">
-            Thank you for being
-            <span style={{ color: "rgb(253, 128, 36)" }}> 🅰️WeS🅾️me</span> !!
+            Thank you for being 🅰️WeS🅾️me !!{" "}
+            <span onClick={handleClose}>X</span>
           </h2>
+
+          <p style={{ color: "red" }}>
+            ** Please fill out the credit card info.
+          </p>
+
           <p id="parent-modal-description">"We L❤️ve You"</p>
+          <p className="backToCart" onClick={handleClose}>
+            ⇠ Back to card
+          </p>
 
           <a
             href="/"
@@ -61,6 +69,7 @@ function SubmitPayment() {
               textDecoration: "none",
               textAlign: "right",
             }}
+            className="continue-shopping"
           >
             Continue shopping.. 🚗
           </a>

@@ -47,7 +47,10 @@ function NestedModal() {
             padding: "3rem 0",
           }}
         >
-          <h2 id="parent-modal-title">Special gifts! 🎁 🎁 🎁</h2>
+          <h2 id="parent-modal-title">
+            Special gifts! 🎁 🎁 🎁 <span onClick={handleClose}>X</span>
+          </h2>
+
           <p id="parent-modal-description">Coming soon!</p>
           <a
             href="/"

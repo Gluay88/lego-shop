@@ -96,7 +96,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 45rem;
+  margin-top: 15%;
   box-shadow: 0 0.25rem 0.125rem 0.55rem rgba(0, 0, 0, 0.075) !important;
 }
 .footer-container h4 {
@@ -169,10 +169,9 @@
   color: #1565c0;
 }
 .holiday-container button {
-  width: 20rem;
-  padding: 1rem;
+  width: 25%;
   border-radius: 5rem;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   margin-bottom: 3rem;
   border: none;
   color: white;
@@ -214,6 +213,8 @@
   border-radius: 0.5rem;
   padding: 2rem;
 }
+/* HELP page  */
+
 .css-s7d5x3-MuiButtonGroup-root {
   width: 40% !important;
   box-shadow: none !important;
@@ -286,6 +287,15 @@
   padding-top: 3rem;
   display: flex;
   justify-content: space-between;
+}
+.checkout-component {
+  margin-top: 10%;
+}
+.checkout-component h2,
+.checkout-component h4 {
+  color: rgb(118, 111, 111);
+  text-align: center;
+  font-size: 1.75rem;
 }
 .checkout-container span {
   font-size: 3rem;
@@ -468,6 +478,28 @@ input.location-search-input {
   width: 100%;
   margin-left: -25% !important;
 }
+h2#parent-modal-title span {
+  color: red;
+  position: absolute;
+  float: right;
+  right: 10%;
+  top: 10%;
+  font-size: 1rem;
+}
+h2#parent-modal-title span:hover {
+  cursor: pointer;
+}
+.seach-address input {
+  width: 100%;
+}
+.backToCart {
+  text-decoration: underline;
+}
+.backToCart:hover,
+.continue-shopping:hover {
+  color: rgb(253, 128, 36);
+  cursor: pointer;
+}
 
 /* MEDIA QUERY STARTS HERE.. */
 @media (max-width: 780px) {
@@ -499,14 +531,16 @@ input.location-search-input {
     text-align: center;
   }
   .link-submenu a:hover {
-    background-color: red;
-    color: white !important;
+    background-color: rgb(255, 230, 230);
   }
   .isSubMenu a.account img {
     background-color: red;
   }
   .mb-4 h1 {
     margin-top: 6% !important;
+  }
+  .discover-container {
+    margin-top: -3% !important;
   }
   .history-lego {
     display: block;
@@ -523,5 +557,97 @@ input.location-search-input {
   .history-lego .founded-lego {
     width: 100% !important;
     display: block;
+  }
+  .help-container {
+    margin-top: 10%;
+  }
+  .help-container .css-s7d5x3-MuiButtonGroup-root {
+    width: 100% !important;
+  }
+  .help-container .css-s7d5x3-MuiButtonGroup-root button {
+    margin-bottom: 0.5rem !important;
+    width: 70% !important;
+    margin: 0 auto;
+    height: 2rem !important;
+    font-size: 0.75rem;
+  }
+  .help-container .order-status-main {
+    width: 100% !important;
+    position: absolute !important;
+    left: 0;
+    margin-top: 80%;
+    font-size: 1rem;
+    height: auto;
+    padding-bottom: 3%;
+  }
+  .order-status {
+    display: none;
+  }
+  .holiday-container {
+    margin-top: 0 !important;
+  }
+  .holiday-container h2 {
+    font-size: 1.25rem;
+  }
+  .holiday-container p {
+    font-size: 1rem;
+  }
+  .holiday-container button {
+    width: 40% !important;
+    height: 2rem;
+    font-size: 1rem;
+  }
+  .checkout-container {
+    width: 100%;
+    display: block;
+  }
+  .form-container {
+    width: 100%;
+  }
+  .credit-container {
+    width: 100%;
+    position: relative !important;
+    display: block;
+    margin-top: 3%;
+  }
+  .col-sm-3 {
+    margin-top: 5% !important;
+  }
+  .seach-address input {
+    width: 85%;
+  }
+}
+
+@media (min-width: 780px) and (max-width: 1300px) {
+  .help-container {
+    margin-top: 3%;
+  }
+  .help-container .css-s7d5x3-MuiButtonGroup-root {
+    width: 100% !important;
+  }
+  .help-container .css-s7d5x3-MuiButtonGroup-root button {
+    margin-bottom: 0.5rem !important;
+    width: 70% !important;
+    margin: 0 auto;
+    height: 2rem !important;
+    font-size: 0.75rem;
+  }
+  .help-container .order-status-main {
+    width: 100% !important;
+    position: absolute !important;
+    left: 0;
+    margin-top: 50%;
+    font-size: 1rem;
+    height: auto;
+    padding-bottom: 3%;
+  }
+  .order-status {
+    display: none;
+  }
+}
+
+@media (min-width: 1301px) {
+  .help-container {
+    margin-top: 10%;
   }
 }

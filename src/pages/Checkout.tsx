@@ -7,7 +7,7 @@ export function Checkout() {
   const { cartQuantity } = useShoppingCart();
 
   return (
-    <div className="sub-container">
+    <div className="checkout-component">
       <div>
         {cartQuantity ? (
           <h2>Checkout</h2>
