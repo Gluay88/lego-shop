@@ -1,17 +1,39 @@
+import React, { useState } from "react";
 import { Button, Container, Nav, Navbar as NavbarBs } from "react-bootstrap";
 import { NavLink, Link } from "react-router-dom";
 import LegoLogo from "../../assets/LEGO_logo_OG.svg";
 import AccountIcon from "../../assets/account-icon.svg";
 import "../App.css";
 import { useShoppingCart } from "../context/ShoppingCartContext";
+import MenuIcon from "../../assets/menuIcon.png";
 
 export function Navbar() {
   const { openCart, cartQuantity } = useShoppingCart();
+  const [isSubMenu, setIsSubMenu] = useState(false);
   return (
     <div>
+      <div className="isSubMenu">
+        <img src={MenuIcon} onClick={() => setIsSubMenu(!isSubMenu)} />
+        <Link to="/">
+          <img src={LegoLogo} alt="Lego Logo" className="lego-logo" />
+        </Link>
+        <a href="#" className="account">
+          <img src={AccountIcon} alt="account-icon" />
+        </a>
+
+        {isSubMenu ? (
+          <div className="link-submenu">
+            <Link to="/">🚗 Cars</Link>
+            <Link to="/discover">🕵🏻‍♀️ Discover</Link>
+            <Link to="/help">🙋🏼‍♀️ Help</Link>
+            <Link to="/holiday">🎁 Holiday</Link>
+            <Link to="/checkout">💰 Checkout</Link>
+          </div>
+        ) : null}
+      </div>
       <NavbarBs sticky="top" className="shadow-sm mb-3" id="nav-bg">
         <Container>
-          <Link to="/">
+          <Link to="/" className="lego-home">
             <img src={LegoLogo} alt="Lego Logo" className="lego-logo" />
           </Link>
           <Nav className="me-auto">
